@@ -1,10 +1,175 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biodata Diri</title>
+    <style>
+        /* Menggunakan font dasar agar rapi seperti di gambar */
+        body {
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        /* border-collapse membuat garis tepi tabel menyatu jadi 1 garis tipis seperti di gambar */
+        .garis-tipis {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!-- Tabel Utama: Membungkus semua konten dengan lebar 1000px dan garis tepi -->
+    <table width="100%" class="garis-tipis" border="1" align="center" cellpadding="0" cellspacing="0">
+        
+        <!-- SECTION 1: MENU (Brand & Link) -->
+        <tr>
+            <td style="padding: 15px 20px;">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="50%">
+                            <!-- Tulisan Brand di kiri -->
+                            Brand
+                        </td>
+                        <td width="50%" align="right">
+                            <!-- Menu di kanan -->
+                            Header &nbsp;&nbsp;&nbsp; Biodata &nbsp;&nbsp;&nbsp; Portofolio
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECTION 2: HERO (Judul Kiri, Gambar Kanan) -->
+        <tr>
+            <td style="padding: 40px 20px;">
+                <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <!-- Kolom Kiri: Teks -->
+                        <td width="40%" valign="top">
+                            <h2 style="margin-top: 0; margin-bottom: 10px;">Selamat Datang di Website Saya</h2>
+                            <p style="margin-top: 0; font-size: 14px;">
+                                Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.
+                            </p>
+                            
+                            <!-- Membuat "Tombol" menggunakan Tabel Kecil -->
+                            <table class="garis-tipis" border="1" cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td style="font-size: 12px; cursor: pointer;">Pelajari Lebih Lanjut</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Kolom Kanan: Kotak Gambar Abu-abu -->
+                        <td width="60%" align="right" valign="top">
+                            <!-- Menggunakan gambar placeholder persis ukuran 600x400 warna abu-abu -->
+                            <img src="https://placehold.co/600x400/d9d9d9/777777?text=600x400" alt="600 x 400" width="600" height="400" style="display: block;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECTION 3: ABOUT ME (Judul & 6 Kotak) -->
+        <tr>
+            <td style="padding: 40px 20px;">
+                <!-- Judul Tengah -->
+                <div align="center">
+                    <h2 style="margin-bottom: 5px; margin-top: 0;">About Me</h2>
+                    <p style="margin-top: 0; color: #777; font-size: 14px;">A brief introduction about myself</p>
+                </div>
+                
+                <br>
+
+                <!-- Tabel 6 Kotak -->
+                <!-- Menggunakan cellspacing="15" untuk membuat jarak antar kotak -->
+                <table width="100%" border="0" cellpadding="15" cellspacing="10">
+                    <!-- Baris 1 -->
+                    <tr>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Full Name</td>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Education</td>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Pekerjaan</td>
+                    </tr>
+                    <!-- Baris 2 -->
+                    <tr>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Contact</td>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Hobi</td>
+                        <td width="33%" align="center" bgcolor="#f2f2f2" style="font-size: 14px;">Alamat</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECTION 4: PORTOFOLIO (3 Kartu Proyek) -->
+        <tr>
+            <td style="padding: 40px 20px;">
+                <!-- Judul Tengah -->
+                <div align="center">
+                    <h2 style="margin-top: 0;">Portofolio</h2>
+                </div>
+
+                <br>
+
+                <!-- Tabel Pembungkus 3 Kolom Portofolio -->
+                <!-- Menggunakan cellpadding untuk jarak antar kartu -->
+                <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                    <tr>
+                        
+                        <!-- Kartu Proyek 1 -->
+                        <td width="33%" valign="top">
+                            <!-- Tabel dalam untuk garis tepi satu kartu -->
+                            <table class="garis-tipis" width="100%" border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img src="https://placehold.co/350x200/cccccc/888888?text=350x200" alt="Proyek 1" width="100%" style="display: block;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 15px;">
+                                        <b style="font-size: 14px;">Proyek 1</b><br>
+                                        <span style="font-size: 13px;">Deskripsi proyek 1.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Kartu Proyek 2 -->
+                        <td width="33%" valign="top">
+                            <table class="garis-tipis" width="100%" border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img src="https://placehold.co/350x200/cccccc/888888?text=350x200" alt="Proyek 2" width="100%" style="display: block;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 15px;">
+                                        <b style="font-size: 14px;">Proyek 2</b><br>
+                                        <span style="font-size: 13px;">Deskripsi proyek 2.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Kartu Proyek 3 -->
+                        <td width="33%" valign="top">
+                            <table class="garis-tipis" width="100%" border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img src="https://placehold.co/350x200/cccccc/888888?text=350x200" alt="Proyek 3" width="100%" style="display: block;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 15px;">
+                                        <b style="font-size: 14px;">Proyek 3</b><br>
+                                        <span style="font-size: 13px;">Deskripsi proyek 3.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
